@@ -9,7 +9,8 @@ const Blog = ({ id, name, complete, dispatch }) => (
     >
       {name}
     </li>
-      <p> Remove </p>
+      <p onClick={() => dispatch({type: 'REMOVE_BLOG', id})}> Remove </p>
+      <p onClick={() => dispatch({type: 'EDIT_BLOG', id})}> Edit </p>
   </div>
 )
 
